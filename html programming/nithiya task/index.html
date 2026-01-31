@@ -1,0 +1,30 @@
+<h1 >Guse the number</h1>
+<input id="gusenumber">
+<button onclick="change()">check</button>
+<p id="result">you are right or wrong</p>
+<P id="score">score:10</P>
+
+<script>
+    var gusenumber=document.getElementById("gusenumber")
+    var result=document.getElementById("result")
+    var randomnumber=Math.floor(Math.random()*10)+1
+    var totalscore=document.getElementById("score")
+    totalscore=10
+    function change()
+    {
+      var enternumber= gusenumber.value
+      if(randomnumber==enternumber){
+      console.log("right")
+      result.textContent="right"
+      }
+    else{
+        console.log("wrong")
+        result.textContent="wrong"
+        totalscore=totalscore-1
+        score.textContent="score:"+totalscore
+
+    }
+    }
+
+
+</script>

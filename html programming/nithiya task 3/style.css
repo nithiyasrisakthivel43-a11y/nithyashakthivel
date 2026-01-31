@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f5f7fa;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.high-spend {
+  background-color: #ffe3e3;
+}
+
+#balance {
+  color: #2e7d32;
+}

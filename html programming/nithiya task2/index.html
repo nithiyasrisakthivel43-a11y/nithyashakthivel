@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dynamic Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+   <center>
+  <h1>Image Gallery</h1>
+
+  <form id="imageForm">
+    <input type="url" id="imageUrl" placeholder="Image URL" />
+    <input type="text" id="imageTitle" placeholder="Image Title" />
+
+    <select id="imageCategory">
+      <option value="">Select Category</option>
+      <option value="Nature">Nature</option>
+      <option value="Animals">Animals</option>
+      <option value="Technology">Technology</option>
+    </select>
+
+    <button type="submit">Add Image</button>
+  </form>
+
+  <div class="filters">
+    <button data-category="All">All</button>
+    <button data-category="Nature">Nature</button>
+    <button data-category="Animals">Animals</button>
+    <button data-category="Technology">Technology</button>
+  </div>
+
+  <div id="gallery" class="gallery"></div>
+
+  <script src="script.js"></script>
+  </center>
+</body>
+</html>
